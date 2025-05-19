@@ -1,0 +1,237 @@
+:root {
+     /* colors */
+     --white800: #fff;
+     --white400: #DCD6E4;
+     --black400: #57525E;
+     --black800: #302D34;
+     --bgblack: #110D16;
+     --purple: #9747FF;
+     --bgwhite: #FEFEFD;
+
+     font-size: 62.5%;
+
+     /* spacing-size */
+     --4: 0.4rem;
+     --8: 0.8rem;
+     --12: 1.2rem;
+     --16: 1.6rem;
+     --18: 1.8rem;
+     --20: 2rem;
+     --24: 2.4rem;
+     --32: 3.2rem;
+     --36: 3.6rem;
+     --48: 4.8rem;
+     --56: 5.6rem;
+     --96: 9.6rem;
+     --104: 10.4rem;
+     --157: 15.7rem;
+}
+
+.titles {
+     display: inline-block;
+     position: relative;
+     font-size: var(--36);
+     font-weight: 800;
+     padding-bottom: 2px;
+     background: linear-gradient(to left, #310377, #A974FB);
+     -webkit-background-clip: text;
+     color: transparent;
+     letter-spacing: 1px;
+}
+
+.titles::after {
+     content: '';
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     height: 5px;
+     width: 100%;
+     background: linear-gradient(to right, #310377, #A974FB);
+     border-radius: 999px;
+}
+
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: 'Poppins', sans-serif;
+     background-color: var(--white800);
+     text-align: center;
+     justify-content: center;
+}
+
+
+/* General Component  */
+
+.grid {
+     display: grid;
+
+}
+
+.grid--2-cols {
+     grid-template-columns: repeat(2, 1fr);
+}
+
+
+.header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height: var(--96);
+     padding: 0 var(--104);
+}
+
+.logo {
+     height: 48px;
+}
+
+.nav-links {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: var(--24);
+     overflow: hidden;
+ }
+
+.nav-links a {
+     text-decoration: none;
+     color: var(--black400);
+     
+ }
+.btn-arrow {
+     width: 17px;
+     height: 32px;
+}
+
+.btn-active {
+     font-weight: 500;
+     text-decoration: none;
+     color: var(--black400);
+     font-size: var(--18);
+     letter-spacing: -2;
+}
+.focus {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height: 32px;
+     border-radius: 50px;
+     background-color: #F4EEFE;
+     gap: var(--4);
+     flex-grow: 0;
+ }
+
+ .link {
+     display: flex;
+     justify-items: center;
+     white-space: nowrap;
+     font-size: var(--18);
+     letter-spacing: -2;
+     align-items: center;
+     padding: 0 21px;
+     height: 32px;
+     transition: all 0.3s ease-in;
+
+
+     &:hover {
+          background-color: #F4EEFE;
+          border-radius: 56px;
+          font-weight: 500;
+          padding: 0 20px;
+     }
+          
+
+}
+
+
+
+/* about me */
+
+
+.my-details-wrapper {
+     grid-template-columns: 1fr 40.7rem;
+     align-items: center;
+}
+
+.zeinab-img {
+     width: 100%;
+     height: 100%;
+}
+
+.my-details {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: var(--32);
+     
+}
+
+.container {
+     padding: 0 var(--104);
+}
+
+.name-text {
+     font-size: var(--24);
+     font-weight: 600;
+     color: var(--black800);
+}
+
+.name-text span {
+     color: var(--purple);
+}
+
+.occupation {
+     color: var(--black800);
+     font-size: var(--36);
+}
+
+.bio {
+     font-size: var(--24);
+     color: var(--black400);
+     font-weight: 400;
+     line-height: 1.6;
+}
+
+.buttons {
+     display: flex;
+     gap: var(--12);
+     align-items: center;
+}
+
+.about-me-text {
+     display: flex;
+     flex-direction: column;
+     gap: var(--32);
+     align-items: center;
+     padding: var(--48) 0;
+     background-color: #F4EEFE;
+}
+
+.explanation {
+     display: flex;
+     flex-direction: column;
+     gap: var(--12);
+     align-items: flex-start;
+     width: 56.53%;
+     padding-bottom: 3.2rem;
+}
+.explanation h3 {
+     font-size: var(--20);
+     color: var(--black800);
+     font-weight: 700;
+     letter-spacing: 1.2px;
+     text-align: left;
+}
+
+.explanation p {
+     font-size: var(--16);
+     color: var(--black400);
+     line-height: 1.6;
+     letter-spacing: 1.2px;
+     text-align: left;
+}

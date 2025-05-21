@@ -210,6 +210,7 @@ body {
      align-items: center;
      padding: var(--48) 0;
      background-color: #F4EEFE;
+     margin-bottom: var(--48);
 }
 
 .explanation {
@@ -234,4 +235,39 @@ body {
      line-height: 1.6;
      letter-spacing: 1.2px;
      text-align: left;
+}
+
+
+/* My Skills */
+
+.my-skills {
+     display: flex;
+     flex-direction: column;
+     justify-items: center;
+     align-items: center;
+     gap: var(--32);
+     padding: var(--48) var(--48);
+     background-color: #F4EEFE;
+     margin-bottom: var(--48);
+}
+
+.skill-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 24px;
+     justify-items: center;
+     align-items: center;
+     padding: 0 157px;
+}
+
+.skill-container p {
+     grid-column: 1/-1;
+}
+
+.skills-container {
+     display: flex;
+     gap: 20px;
+     align-items: center;
+     justify-content: center;
+     padding-bottom: 32px;
 }

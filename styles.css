@@ -37,11 +37,14 @@
      -webkit-background-clip: text;
      color: transparent;
      letter-spacing: 1px;
+     overflow: hidden;
+     width: fit-content;
 }
 
 .titles::after {
      content: '';
      position: absolute;
+     
      left: 0;
      bottom: 0;
      height: 5px;
@@ -250,18 +253,33 @@ body {
      background-color: #F4EEFE;
      margin-bottom: var(--48);
 }
-
-.skill-container {
+.skills-wrapper {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
+     gap: 20px;
+     align-items: center;
+}
+.skill-container {
+     display: flex;
+     flex-direction: column;
      gap: 24px;
      justify-items: center;
      align-items: center;
      padding: 0 157px;
 }
 
+.logo-wrapper {
+     display: flex;
+     gap: 20px;
+     align-items: center;
+     justify-content: center;
+}
 .skill-container p {
      grid-column: 1/-1;
+     font-weight: 600;
+     font-size: 20px;
+     white-space: nowrap;
+
 }
 
 .skills-container {
@@ -281,11 +299,70 @@ body {
 
 
 
+/* My Education */
+.my-education {
+     padding: 
+     32px 104px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 32px;
+}
 
-
+.cert-wrapper {
+     display: flex;
+     gap: 20px;
+}
 
 .certificate {
      width: 293px;
-     height: 202.7px;
+     height: 202.07px;
+    
+}
+
+.org-logo {
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     border: 1px solid #fff;
+}
+
+
+
+/* My Projects */
+.projects-wrapper {
+     display: flex;
+     gap: 20px;
+     padding: 0 104px;
+}
+.project-info img {
+     width: 293px;
+     height: 148px;
      object-fit: cover;
+}
+
+
+
+/* Form */
+
+.form-wrapper {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+
+.form {
+     width: 398px;
+     height: auto;
+}
+
+.form label {
+     font-size: 16px;
+     font-weight: 500;
+}
+
+.form input , .form textarea {
+     padding: 12px 16px;
+     border-radius: 8px;
 }

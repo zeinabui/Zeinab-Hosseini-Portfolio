@@ -271,3 +271,21 @@ body {
      justify-content: center;
      padding-bottom: 32px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.certificate {
+     width: 293px;
+     height: 202.7px;
+     object-fit: cover;
+}

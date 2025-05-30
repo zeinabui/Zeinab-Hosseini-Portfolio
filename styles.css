@@ -360,12 +360,14 @@ body {
      gap: 3.2rem;
      align-items: center;
      justify-content: center;
+     padding: 0 10.4rem;
 }
 
 .testestimonial-wrapper {
      display: flex;
      justify-content: space-between;
      align-items: center;
+     gap: 2rem;
 }
 
 .client {
@@ -373,8 +375,34 @@ body {
      flex-direction: column;
      align-items: center;
      justify-content: center;
+     padding: 1.6rem 4.8rem 4.8rem 2.4rem;
+     gap: 1.6rem;
+     border: 3px solid #310377;
+     border-radius: 8px;
 }
 
+.text-wrapper {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: space-between;
+     gap: 16px;
+}
+
+.text-wrapper:first-of-type {
+     font-size: 18px;
+     font-weight: 400;
+     color: #57525E;
+     line-height: 1.5;
+     text-align: left;
+     letter-spacing: 1.2px;
+}
+
+.text-wrapper span {
+     font-family: 'Gotham Black';
+     font-size: 48px;
+     color: #310377;
+}
 
 .client-img {
      width: 78px;
@@ -382,6 +410,25 @@ body {
      object-fit: cover;
      border-radius: 50%;
      border: 1px solid #9747FF;
+}
+
+.c-container {
+     display: flex;
+     flex-direction: column;
+     gap: 4px;
+     text-align: left;
+}
+
+.author {
+     font-size: 16px;
+     font-weight: 500;
+     color: #302D34;
+}
+
+.job {
+     font-size: 14px;
+     color: #57525E;
+     font-weight: 400;
 }
 
 /* Form */

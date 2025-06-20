@@ -2,17 +2,27 @@
 <html lang="en">
 <head>
      <meta charset="UTF-8">
+     <meta name="description" content="Zeinab Hosseini is a junior UX/UI designer and graphic designer specializing in user-centered design, responsive interfaces, and front-end development using HTML and CSS. Explore a portfolio of modern, accessible, and visually engaging digital experiences." />
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Outfit:wght@100..900&family=Protest+Revolution&display=swap">
-     <link rel="stylesheet" href="styles.css">
-     <title>Portfolio</title>
+     <link rel="stylesheet" href="CSS/styles.css">
+     <link rel="stylesheet" href="CSS/queriers.css">
+
+     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
+     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+     <script defer src="js/script.js"></script>
+
+
+     <title>Zeinab Hosseini Portfolio</title>
 </head>
 <body>
      <!-- this is header -->
      <header class="header">
           <img class="logo" src="images/Logo.svg" alt="logo">
           <nav class="nav-links">
-               <div class="focus">
+               <!-- <div class="focus">
                     <svg class="btn-arrow" width="17" height="34" viewBox="0 0 17 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                          <path d="M17 1V1C8.16344 1 1 8.16344 1 17V17C1 25.8366 8.16344 33 17 33V33" stroke="#302D34"/>
                     </svg>
@@ -20,18 +30,28 @@
                     <svg class="btn-arrow" width="17" height="34" viewBox="0 0 17 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                          <path d="M0 1V1C8.83656 1 16 8.16344 16 17V17C16 25.8366 8.83656 33 0 33V33" stroke="#302D34"/>
                     </svg>
-               </div>
-               <a class="link" href=".my-education">My Education</a>
-               <a class="link" href=".my-skills">My Skills</a>
-               <a class="link" href=".my-projects">My Projects</a>
-               <a class="link" href=".testimonials">Testimonials</a>
-               <a class="link" href=".contact-me">Contact Me</a>
-          </nav>
+               </div> -->
+
+               <nav class="main-nav">
+                    <ul class="main-nav-list">
+                         <li><a class="main-nav-link" href="#about-me">About Me</a></li>
+                         <li><a class="main-nav-link" href="#my-education">My Education</a></li>
+                         <li><a class="main-nav-link" href="#my-skills">My Skills</a></li>
+                         <li><a class="main-nav-link" href="#my-projects">My Projects</a></li>
+                         <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
+                         <li><a class="main-nav-link nav-cta" href="#contact-me">Contact Me</a></li>
+                    </ul>
+               </nav>
+               
+               <button class="btn-mobile-nav">
+                    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+               </button>
      </header>
      <!-- this is main content page -->
      <main>
           <!-- this is About me section -->
-          <section class="hero-section">
+          <section class="hero-section" id="about-me">
                <div class="container">
                     <div class="my-details-wrapper grid">
                          <div class="my-details">
@@ -44,10 +64,25 @@
                                    <a class="btn download-cv">Download CV</a>
                               </div>
                               <div class="social-m-links">
-                                   <div class="bg-color">
-                                   <div class="bg-logo">
-                                        <img src="linkedin.svg" alt="linkedin">
+                                   <div class="gradient-circle">
+                                        <div class="bg-logo">
+                                             <img src="linkedin.svg" alt="linkedin">
+                                        </div>
                                    </div>
+                                   <div class="gradient-circle">
+                                        <div class="bg-logo">
+                                             <img src="instagram.svg" alt="linkedin">
+                                        </div>
+                                   </div>
+                                   <div class="gradient-circle">
+                                        <div class="bg-logo">
+                                             <img src="mail.svg" alt="linkedin">
+                                        </div>
+                                   </div>
+                                   <div class="gradient-circle">
+                                        <div class="bg-logo">
+                                             <img src="github-original.svg" alt="linkedin">
+                                        </div>
                                    </div>
                               </div>
                          </div>
@@ -55,7 +90,7 @@
                     </div>
                </div>
                <div class="about-me-text">
-                    <h2 class="titles">About Me</h2>
+                    <h2 class="heading-primary">About Me</h2>
                     <div class="explanation">
                     <h3>Beautiful. Usable. Intentional.</h3>
                     <p>I design experiences that make sense. As a UX/UI designer, I blend function with form - crafting interfaces that are intuitive, accessible , and built around real human needs. </p>
@@ -63,8 +98,8 @@
                </div>
           </section>
           <!-- this is My education section -->
-          <section class="my-education">
-                    <h2 class="titles">My Education</h2>
+          <section class="my-education" id="my-education">
+                    <h2 class="heading-primary">My Education</h2>
                     <div class="certificates">
                          <div class="cert-info">
                               <img class="bg-edu" src="bg-edu.svg" alt="black background">
@@ -121,8 +156,8 @@
                     </div>
 
           </section>
-          <section class="my-skills">
-               <h2 class="titles">My Skills</h2>
+          <section class="my-skills" id="my-skills">
+               <h2 class="heading-primary">My Skills</h2>
                <div class="skills-wrapper">
                     <div class="skill-container">
                          <p>Graphic Design</p>
@@ -134,12 +169,12 @@
                     </div>
 
                     <div class="skill-container">
-                         <p>Graphic Design</p>
+                         <p>UX/UI Design</p>
                          <img src="images/Figma.svg" alt="Figma">
                     </div> 
 
                     <div class="skill-container">
-                         <p>Graphic Design</p>
+                         <p>Web Development</p>
                          <div class="logo-wrapper">
                               <img src="images/html5-original.svg" alt="HTML">
                               <img src="images/css3-original.svg" alt="CSS">
@@ -148,8 +183,8 @@
                </div>
           </section>
           <!-- this is my project -->
-          <section class="my-projects">
-               <h2 class="titles">My Projects</h2>
+          <section class="my-projects" id="my-projects">
+               <h2 class="heading-primary">My Projects</h2>
                <div class="projects-wrapper">
                     <div class="project-info">
                          <img class="bg-pro" src="bg-pro.svg" alt="black background">
@@ -237,8 +272,8 @@
                </div>
           </section>
           <!-- this is testimonials -->
-          <section class="testimonials">
-               <h2 class="titles">Testimonials</h2>
+          <section class="testimonials" id="testimonials">
+               <h2 class="heading-primary">Testimonials</h2>
                <div class="testestimonial-wrapper">
                     <div class="bg-gradient">
                          <div class="client">
@@ -280,8 +315,8 @@
                </div>
                </div>
           </section>
-          <section class="contact-me">
-               <h2 class="titles">Contact Me</h2>
+          <section class="contact-me" id="contact-me">
+               <h2 class="heading-primary">Contact Me</h2>
                <!-- remmeber to enter an url -->
                <div class="form-wrapper">
                     
@@ -309,16 +344,36 @@
                               </div>
                          </form> 
                </div>
-               <div class="social-media">
-               <p>Follow me on my social media</p>
-               <div class="social-icons">
-
-               </div>
-               </div>
           </section>
+          
+          <div class="social-media">
+               <p class="heading-s">Follow me on my social media</p>
+               <div class="social-m-links">
+                                   <div class="gradient-circle">
+                                        <div class="bg-logo">
+                                             <img src="linkedin.svg" alt="linkedin">
+                                        </div>
+                                   </div>
+                                   <div class="gradient-circle">
+                                        <div class="bg-logo">
+                                             <img src="instagram.svg" alt="linkedin">
+                                        </div>
+                                   </div>
+                                   <div class="gradient-circle">
+                                        <div class="bg-logo">
+                                             <img src="mail.svg" alt="linkedin">
+                                        </div>
+                                   </div>
+                                   <div class="gradient-circle">
+                                        <div class="bg-logo">
+                                             <img src="github-original.svg" alt="linkedin">
+                                        </div>
+                                   </div>
+               </div>
+          </div>
      </main>
      <footer class="footer">
-          <p>&copy; Zeinab Hosseini 2025 | All rights are reserved.</p>
+          <p>&copy; <span class="bold">Zeinab Hosseini</span> <span class="year">2025</span> | All rights are reserved.</p>
      </footer>
 </body>
 </html>

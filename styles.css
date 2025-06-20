@@ -274,40 +274,6 @@ body {
      gap: 20px;
 }
 
-.gradient-circle::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: conic-gradient(
-    from 0deg,
-    #ca9efa,
-    #be78fb,
-    #9647fd,
-    #a131fd,
-    #632cfd,
-    #356afb,
-    #5095fd,
-    #68c9fd,
-    #85fbfd,
-    #dfc8fa
-    
-  );
-  animation: rotateGradient 4s linear infinite;
-  filter: blur(21px);
-}
-
-
-@keyframes rotateGradient {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 .bg-logo {
      position: absolute;

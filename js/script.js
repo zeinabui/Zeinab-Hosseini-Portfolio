@@ -59,7 +59,7 @@ allLinks.forEach(function (link) {
 ///////////////////////////////////////////////////////////
 // Sticky navigation
 
-const sectionHeroEl = document.querySelector(".section-hero");
+const sectionHeroEl = document.querySelector(".hero-section");
 
 const obs = new IntersectionObserver(
   function (entries) {
@@ -81,7 +81,7 @@ const obs = new IntersectionObserver(
     rootMargin: "-80px",
   }
 );
-// obs.observe(sectionHeroEl);
+obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
@@ -102,6 +102,9 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+
+
+
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 

@@ -74,6 +74,15 @@ padding: 0 var(--64);
           padding: var(--64) var(--64);
      }
 
+     .zeinab-img {
+     width: 100%;
+     height: auto;
+     
+     
+}
+
+
+
 }
 
 
@@ -257,6 +266,10 @@ padding: 0 var(--30);
     font-size: 2.4rem;
   }
 
+  .my-details-wrapper {
+     grid-template-columns: 1fr;}
+
+  
 
 }
 
@@ -274,6 +287,8 @@ padding: 0 var(--30);
       {
           grid-template-columns: 1fr;
      }
+
+     
 
      .testestimonial-wrapper {
           gap: 8rem;
@@ -297,13 +312,6 @@ padding: 0 var(--30);
           margin-bottom: 4.8rem;
      }
 
-     .pricing-plan {
-          width: 100%;
-     }
-
-     .grid--footer {
-  grid-template-columns: repeat(6, 1fr);
-     }
      .logo-col, .address-col {
      grid-column: span 3;
      }

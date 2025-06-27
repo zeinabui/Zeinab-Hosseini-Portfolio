@@ -588,8 +588,9 @@ width: 52px;
 .visit-btn {
      color: var(--bgblack);
      text-align: right;
-     padding-top: 64px;
-     padding-left: 12px ;
+     padding-top: 70px;
+     padding-left: 8px;
+     
 }
 
 
@@ -623,6 +624,7 @@ width: 52px;
      z-index: -1;
      width: 293px;
      height: 304px;
+     
 } 
 
 .pro-img {
@@ -653,6 +655,8 @@ width: 52px;
      font-size: 12px;
      font-weight: 400;
      color: var(--white400);
+     line-height: 1.6;
+     letter-spacing: 1px;
 }
 
 .links {
@@ -677,12 +681,25 @@ width: 52px;
      gap: 4px;
      align-items: center;
      justify-content: center;
+     
+}
+
+.icon-link a{
+     text-decoration: none;
 }
 
 .icon-link p {
      font-size: 14px;
      font-weight: 500;
      color: var(--black800);
+     text-decoration: none;
+     &:hover {
+          color: #310377;
+     }
+}
+
+.no-under {
+     text-decoration: none;
 }
 
 
@@ -710,6 +727,7 @@ width: 52px;
      grid-template-columns: repeat(3, 1fr);
      align-items: center;
      gap: 2rem;
+     
 }
 
 
@@ -718,6 +736,7 @@ width: 52px;
      padding: 1px;
      background: linear-gradient(135deg, #A974FB99, #FEFEFD, #A974FB66);
      border-radius: 8px;
+     
 }
 .client {
      width: 100%;
@@ -731,6 +750,9 @@ width: 52px;
      border-radius: 8px;
      position: relative;
      background-color: #fff;
+     &:hover {
+          box-shadow: 0 0 12px rgba(49, 3, 119, 0.15);
+     }
 }
 
 .client-img {
@@ -905,11 +927,11 @@ width: 52px;
 
 .heading-s {
      
-     font-size: var(--20);
-     font-weight: 500;
+     font-size: var(--24);
+     font-weight: 600;
      text-align: center;
      color: #302D34;
-     letter-spacing: 1px;
+     
 }
 
 .footer {
